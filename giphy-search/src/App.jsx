@@ -2,6 +2,7 @@ import NavBar from './components/NavBar'
 import GifContainer from './components/GifContainer'
 import GifSearch from './components/GifSearch'
 import { handleFetch } from './utils';
+import TrendingGifs from './components/TrendGif'
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div className="ui container">
         <GifSearch />
         <br />
-        <GifContainer />
+        {/* <GifContainer /> */}
+        <TrendingGifs/>
       </div>
     </div>
   );
